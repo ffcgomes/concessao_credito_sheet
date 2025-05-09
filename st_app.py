@@ -329,7 +329,7 @@ st.title("App para Prever Probabilidade de Pagamento Automática")
 
 # --- Lógica de Acionamento Baseada em Parâmetros de URL ---
 query_params = st.query_params
-print(f'Parâmetros de URL: {query_params}') # Para depuração, pode ser removido depois
+st.write(f'Parâmetros de URL: {query_params}') # Para depuração, pode ser removido depois
 # Adiciona um cabeçalho para mostrar os parâmetros de URL
 
 # Verifica se o parâmetro 'trigger' está presente na URL e é 'true'
