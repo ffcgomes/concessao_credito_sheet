@@ -333,6 +333,7 @@ query_params = st.query_params
 # Verifica se o parâmetro 'trigger' está presente na URL e é 'true'
 # A URL vinda do script Apps Script deve ser algo como:
 # https://<sua_url_streamlit>/?trigger=true
+trigger = 'true'
 if 'trigger' in query_params and query_params['trigger'] == 'true':
     # --- Execução Automática ---
     st.header("Processamento Automático Iniciado")
