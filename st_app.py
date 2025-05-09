@@ -329,11 +329,13 @@ st.title("App para Prever Probabilidade de Pagamento Automática")
 
 # --- Lógica de Acionamento Baseada em Parâmetros de URL ---
 query_params = st.query_params
+print(f'Parâmetros de URL: {query_params}') # Para depuração, pode ser removido depois
+# Adiciona um cabeçalho para mostrar os parâmetros de URL
 
 # Verifica se o parâmetro 'trigger' está presente na URL e é 'true'
 # A URL vinda do script Apps Script deve ser algo como:
 # https://<sua_url_streamlit>/?trigger=true
-trigger = 'true'
+
 if 'trigger' in query_params and query_params['trigger'] == 'true':
     # --- Execução Automática ---
     st.header("Processamento Automático Iniciado")
